@@ -23,7 +23,7 @@ public abstract class Player implements Interactions {
 
     //must initialized
     protected Weapon weapon;
-    protected List<Armor> armor = new ArrayList<>();
+    protected List<Armor> armor;
 
 
   protected Player(String name, String specification, int amountOfArmor, List<Armor> armor, Weapon weapon, String weaponType){
