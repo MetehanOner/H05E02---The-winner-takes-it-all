@@ -1,6 +1,6 @@
 package de.tum.in.ase;
 
-public class Mage{
+public class Mage extends Player{
   // TODO: Implement part 4.
 
   // TODO: Implement part 5.

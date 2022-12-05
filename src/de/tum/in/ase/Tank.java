@@ -1,6 +1,6 @@
 package de.tum.in.ase;
 
-public class Tank {
+public class Tank extends Player {
   // TODO: Implement part 4.
 
   // TODO: Implement part 5.

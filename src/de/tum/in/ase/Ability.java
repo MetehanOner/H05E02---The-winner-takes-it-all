@@ -35,8 +35,6 @@ public class Ability {
           }
       }
 
-
-
   }
 
   public String getName() {
