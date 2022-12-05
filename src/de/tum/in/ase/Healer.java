@@ -6,9 +6,9 @@ import java.util.List;
 public class Healer extends Player {
 
     private List<Ability> abilities;
-    protected Healer(String name, String specification, int amountOfArmor, List<Armor> armor, Weapon weapon, String weaponType) {
-        super(name, specification, amountOfArmor, armor, weapon, weaponType);
-        abilities = new ArrayList<>();
+    protected Healer(String name, List<Ability> abilities, List<Armor> armor, Weapon weapon, String weaponType) {
+        super(name, "HEALER", armor.size(), armor, weapon, weaponType);
+        this.abilities = abilities;
         equipItems();
     }
 

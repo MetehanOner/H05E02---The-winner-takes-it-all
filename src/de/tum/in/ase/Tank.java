@@ -8,9 +8,9 @@ public class Tank extends Player {
     private Armor shield;
     private List<Ability> abilities;
 
-    protected Tank(String name, String specification, int amountOfArmor, List<Armor> armor, Weapon weapon, String weaponType) {
-        super(name, specification, amountOfArmor, armor, weapon, weaponType);
-        abilities = new ArrayList<>();
+    protected Tank(String name, List<Ability> abilities, List<Armor> armor, Weapon weapon, String weaponType, Armor shield) {
+        super(name, "TANK", armor.size(), armor, weapon, weaponType);
+        this.abilities = abilities;
         equipItems();
     }
 
@@ -26,6 +26,10 @@ public class Tank extends Player {
 
     public List<Ability> getAbilities() {
         return abilities;
+    }
+
+    public Armor getShield() {
+        return shield;
     }
 
     // TODO: Implement part 4.
