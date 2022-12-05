@@ -12,10 +12,10 @@ public abstract class Item {
 
     protected Item(String type){
       this.type = type;
-
-
+      this.equipped = false;
 
     }
+
 
 
 

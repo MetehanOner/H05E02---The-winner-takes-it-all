@@ -2,6 +2,7 @@ package de.tum.in.ase;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public abstract class Player implements Interactions {
   // TODO: Add missing attributes.
@@ -31,10 +32,14 @@ public abstract class Player implements Interactions {
     this.specification = specification;
     this.amountOfArmor = amountOfArmor;
     this.weaponType = weaponType;
-    this.weapon = weapon;
+
+    if(Objects.equals(weaponType, weapon.type)){
+      this.weapon = weapon;
+    }
+
     this.armor = armor;
 
-
+    this.health = 200;
 
 
   }
@@ -45,7 +50,10 @@ public abstract class Player implements Interactions {
 
     protected void equipItems(){
 
+
+
     }
 
   // TODO: Implement part 3.
+
 }
