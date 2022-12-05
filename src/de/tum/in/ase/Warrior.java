@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Warrior extends Player {
 
-    List<Ability> abilities;
+    private List<Ability> abilities;
     protected Warrior(String name, String specification, int amountOfArmor, List<Armor> armor, Weapon weapon, String weaponType) {
         super(name, specification, amountOfArmor, armor, weapon, weaponType);
         abilities = new ArrayList<>();
