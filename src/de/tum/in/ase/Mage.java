@@ -1,7 +1,16 @@
 package de.tum.in.ase;
 
 public class Mage extends Player{
-  // TODO: Implement part 4.
+    @Override
+    public void attack(Player target) {
+
+    }
+
+    @Override
+    public void useAbility(Player target) {
+
+    }
+    // TODO: Implement part 4.
 
   // TODO: Implement part 5.
 
