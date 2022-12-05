@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Tank extends Player {
 
-    protected Armor shield;
-    List<Ability> abilities;
+    private Armor shield;
+    private List<Ability> abilities;
 
     protected Tank(String name, String specification, int amountOfArmor, List<Armor> armor, Weapon weapon, String weaponType) {
         super(name, specification, amountOfArmor, armor, weapon, weaponType);
