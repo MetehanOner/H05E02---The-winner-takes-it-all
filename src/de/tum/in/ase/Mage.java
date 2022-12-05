@@ -21,6 +21,11 @@ public class Mage extends Player{
     public void useAbility(Player target) {
 
     }
+
+    public List<Ability> getAbilities() {
+        return abilities;
+    }
+
     // TODO: Implement part 4.
 
   // TODO: Implement part 5.

@@ -21,6 +21,11 @@ public class Healer extends Player {
     public void useAbility(Player target) {
 
     }
+
+    public List<Ability> getAbilities() {
+        return abilities;
+    }
+
     // TODO: Implement part 4.
 
 
