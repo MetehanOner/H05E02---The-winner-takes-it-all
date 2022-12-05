@@ -1,13 +1,14 @@
 package de.tum.in.ase;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Mage extends Player{
 
-    protected List<Ability> abilities;
+    List<Ability> abilities;
     protected Mage(String name, String specification, int amountOfArmor, List<Armor> armor, Weapon weapon, String weaponType) {
         super(name, specification, amountOfArmor, armor, weapon, weaponType);
-
+        abilities = new ArrayList<>();
         equipItems();
     }
 

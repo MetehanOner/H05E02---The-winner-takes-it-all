@@ -1,14 +1,16 @@
 package de.tum.in.ase;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Tank extends Player {
 
     protected Armor shield;
-    protected List<Ability> abilities;
+    List<Ability> abilities;
+
     protected Tank(String name, String specification, int amountOfArmor, List<Armor> armor, Weapon weapon, String weaponType) {
         super(name, specification, amountOfArmor, armor, weapon, weaponType);
-
+        abilities = new ArrayList<>();
         equipItems();
     }
 
@@ -22,6 +24,7 @@ public class Tank extends Player {
 
     }
     // TODO: Implement part 4.
+
 
   // TODO: Implement part 5.
 
