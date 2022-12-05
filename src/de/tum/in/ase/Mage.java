@@ -6,7 +6,7 @@ import java.util.List;
 public class Mage extends Player{
 
     private List<Ability> abilities;
-    private Mage(String name, List<Ability> abilities, List<Armor> armor, Weapon weapon, String weaponType) {
+    public Mage(String name, List<Ability> abilities, List<Armor> armor, Weapon weapon, String weaponType) {
         super(name, "MAGE", armor.size(), armor, weapon, weaponType);
         this.abilities = abilities;
         equipItems();

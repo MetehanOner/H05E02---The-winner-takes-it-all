@@ -6,7 +6,7 @@ import java.util.List;
 public class Warrior extends Player {
 
     private List<Ability> abilities;
-    private Warrior(String name, List<Ability> abilities, List<Armor> armor, Weapon weapon, String weaponType) {
+    public Warrior(String name, List<Ability> abilities, List<Armor> armor, Weapon weapon, String weaponType) {
         super(name, "WARRIOR", armor.size(), armor, weapon, weaponType);
         this.abilities = abilities;
         equipItems();

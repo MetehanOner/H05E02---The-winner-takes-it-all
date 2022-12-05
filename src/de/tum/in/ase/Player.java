@@ -35,6 +35,8 @@ public abstract class Player implements Interactions {
     this.armor = armor;
 
 
+
+
   }
 
     protected boolean isDead(){
