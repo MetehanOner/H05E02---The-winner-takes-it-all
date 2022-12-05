@@ -1,5 +1,8 @@
 package de.tum.in.ase;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class Player implements Interactions {
   // TODO: Add missing attributes.
     protected String name;
@@ -18,9 +21,21 @@ public abstract class Player implements Interactions {
     protected Armor legs;
     protected Armor boots;
 
-    protected Player(){
+    //must initialized
+    protected Weapon weapon;
+    protected List<Armor> armor = new ArrayList<>();
 
-    }
+
+  protected Player(String name, String specification, int amountOfArmor, List<Armor> armor, Weapon weapon, String weaponType){
+    this.name = name;
+    this.specification = specification;
+    this.amountOfArmor = amountOfArmor;
+    this.weaponType = weaponType;
+    this.weapon = weapon;
+    this.armor = armor;
+
+
+  }
 
     protected boolean isDead(){
         return health == 0;
