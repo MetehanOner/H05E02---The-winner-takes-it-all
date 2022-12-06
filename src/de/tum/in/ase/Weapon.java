@@ -6,11 +6,9 @@ public class Weapon extends Item {
 
     public Weapon(String weaponType, String specification, int damage, int strength, int intelligence, int agility, int spirit) {
         super(weaponType);
-
-        super.specification = specification;
-
         this.damage = damage;
 
+        super.specification = specification;
         super.strength = strength;
         super.intelligence = intelligence;
         super.agility = agility;

@@ -7,7 +7,7 @@ public class Healer extends Player {
 
     private List<Ability> abilities;
     public Healer(String name, List<Ability> abilities, List<Armor> armor, Weapon weapon, String weaponType) {
-        super(name, "HEALER", armor.size(), armor, weapon, weaponType);
+        super(name, "Healer", armor.size(), armor, weapon, weaponType);
         this.abilities = abilities;
         equipItems();
     }

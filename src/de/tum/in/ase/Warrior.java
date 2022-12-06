@@ -7,7 +7,7 @@ public class Warrior extends Player {
 
     private List<Ability> abilities;
     public Warrior(String name, List<Ability> abilities, List<Armor> armor, Weapon weapon, String weaponType) {
-        super(name, "WARRIOR", armor.size(), armor, weapon, weaponType);
+        super(name, "Warrior", armor.size(), armor, weapon, weaponType);
         this.abilities = abilities;
         equipItems();
     }

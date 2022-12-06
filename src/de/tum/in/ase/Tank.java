@@ -9,7 +9,7 @@ public class Tank extends Player {
     private List<Ability> abilities;
 
     public Tank(String name, List<Ability> abilities, List<Armor> armor, Weapon weapon, String weaponType, Armor shield) {
-        super(name, "TANK", armor.size(), armor, weapon, weaponType);
+        super(name, "Tank", armor.size(), armor, weapon, weaponType);
         this.abilities = abilities;
         equipItems();
         equipShield();

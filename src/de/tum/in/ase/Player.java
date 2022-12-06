@@ -36,15 +36,13 @@ public abstract class Player implements Interactions {
     if(Objects.equals(weaponType, weapon.type)){
       this.weapon = weapon;
     }
-
     this.armor = armor;
-
     this.health = 200;
-
+    equipItems();
 
   }
 
-    protected boolean isDead(){
+    protected boolean isDead() {
         return health == 0;
     }
 

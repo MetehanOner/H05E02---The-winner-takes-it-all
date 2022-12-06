@@ -7,7 +7,7 @@ public class Mage extends Player{
 
     private List<Ability> abilities;
     public Mage(String name, List<Ability> abilities, List<Armor> armor, Weapon weapon, String weaponType) {
-        super(name, "MAGE", armor.size(), armor, weapon, weaponType);
+        super(name, "Mage", armor.size(), armor, weapon, weaponType);
         this.abilities = abilities;
         equipItems();
     }
