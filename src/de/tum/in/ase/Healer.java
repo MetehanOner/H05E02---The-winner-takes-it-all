@@ -9,6 +9,13 @@ public class Healer extends Player {
     public Healer(String name, List<Ability> abilities, List<Armor> armor, Weapon weapon, String weaponType) {
         super(name, "Healer", armor.size(), armor, weapon, weaponType);
         this.abilities = abilities;
+
+        super.strength = 3;
+        super.intelligence = 5;
+        super.agility = 3;
+        super.spirit = 10;
+        super.amountOfArmor = 9;
+
         equipItems();
     }
 

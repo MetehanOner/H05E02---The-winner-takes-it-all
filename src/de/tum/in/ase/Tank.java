@@ -11,6 +11,13 @@ public class Tank extends Player {
     public Tank(String name, List<Ability> abilities, List<Armor> armor, Weapon weapon, String weaponType, Armor shield) {
         super(name, "Tank", armor.size(), armor, weapon, weaponType);
         this.abilities = abilities;
+
+        super.strength = 15;
+        super.intelligence = 4;
+        super.agility = 6;
+        super.spirit = 2;
+        super.amountOfArmor = 30;
+
         equipItems();
         equipShield();
     }

@@ -36,6 +36,7 @@ public abstract class Player implements Interactions {
     if(Objects.equals(weaponType, weapon.type)){
       this.weapon = weapon;
     }
+    this.level = 1;
     this.armor = armor;
     this.health = 200;
     equipItems();
@@ -47,6 +48,10 @@ public abstract class Player implements Interactions {
     }
 
     protected void equipItems(){
+
+
+
+
 
 
 
