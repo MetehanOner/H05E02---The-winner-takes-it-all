@@ -33,9 +33,10 @@ public abstract class Player implements Interactions {
     this.amountOfArmor = amountOfArmor;
     this.weaponType = weaponType;
 
-    if(Objects.equals(weaponType, weapon.type)){
+    if(Objects.equals(weaponType, weapon.type)) {
       this.weapon = weapon;
     }
+
     this.level = 1;
     this.armor = armor;
     this.health = 200;
@@ -49,14 +50,64 @@ public abstract class Player implements Interactions {
 
     protected void equipItems(){
 
+    for(int i=0; i < armor.size(); i++){
+
+      if(Objects.equals(armor.get(i).type, "helmet")){
+
+        this.helmet = armor.get(i);
+        strength += armor.get(i).strength;
+        intelligence += armor.get(i).intelligence;
+        agility += armor.get(i).agility;
+        spirit += armor.get(i).spirit;
+        amountOfArmor += armor.get(i).getAmountOfArmor();
+        break;
+
+      } else if (Objects.equals(armor.get(i).type, "chest")) {
+
+        this.chest = armor.get(i);
+        strength += armor.get(i).strength;
+        intelligence += armor.get(i).intelligence;
+        agility += armor.get(i).agility;
+        spirit += armor.get(i).spirit;
+        amountOfArmor += armor.get(i).getAmountOfArmor();
+        break;
+
+      } else if (Objects.equals(armor.get(i).type, "hands")) {
+
+        this.hands = armor.get(i);
+        strength += armor.get(i).strength;
+        intelligence += armor.get(i).intelligence;
+        agility += armor.get(i).agility;
+        spirit += armor.get(i).spirit;
+        amountOfArmor += armor.get(i).getAmountOfArmor();
+        break;
 
 
+      } else if (Objects.equals(armor.get(i).type, "legs")) {
 
+        this.legs = armor.get(i);
+        strength += armor.get(i).strength;
+        intelligence += armor.get(i).intelligence;
+        agility += armor.get(i).agility;
+        spirit += armor.get(i).spirit;
+        amountOfArmor += armor.get(i).getAmountOfArmor();
+        break;
 
+      } else if (Objects.equals(armor.get(i).type, "boots")) {
 
+        this.boots = armor.get(i);
+        strength += armor.get(i).strength;
+        intelligence += armor.get(i).intelligence;
+        agility += armor.get(i).agility;
+        spirit += armor.get(i).spirit;
+        amountOfArmor += armor.get(i).getAmountOfArmor();
+        break;
+
+      }
 
     }
 
-  // TODO: Implement part 3.
+
+    }
 
 }
