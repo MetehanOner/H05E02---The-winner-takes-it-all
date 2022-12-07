@@ -16,7 +16,7 @@ public class Healer extends Player {
         super.spirit = 10;
         super.amountOfArmor = 9;
 
-        equipItems();
+        super.equipItems();
     }
 
     @Override

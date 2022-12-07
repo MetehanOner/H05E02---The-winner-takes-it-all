@@ -40,7 +40,7 @@ public abstract class Player implements Interactions {
     this.level = 1;
     this.armor = armor;
     this.health = 200;
-    equipItems();
+    //equipItems();
 
   }
 
@@ -59,7 +59,8 @@ public abstract class Player implements Interactions {
         intelligence += armor.get(i).intelligence;
         agility += armor.get(i).agility;
         spirit += armor.get(i).spirit;
-        amountOfArmor += armor.get(i).getAmountOfArmor();
+        amountOfArmor -= armor.get(i).getAmountOfArmor();
+
 
 
       } else if (Objects.equals(armor.get(i).type, "chest")) {
@@ -69,7 +70,7 @@ public abstract class Player implements Interactions {
         intelligence += armor.get(i).intelligence;
         agility += armor.get(i).agility;
         spirit += armor.get(i).spirit;
-        amountOfArmor += armor.get(i).getAmountOfArmor();
+        amountOfArmor -= armor.get(i).getAmountOfArmor();
 
 
       } else if (Objects.equals(armor.get(i).type, "hands")) {
@@ -79,7 +80,7 @@ public abstract class Player implements Interactions {
         intelligence += armor.get(i).intelligence;
         agility += armor.get(i).agility;
         spirit += armor.get(i).spirit;
-        amountOfArmor += armor.get(i).getAmountOfArmor();
+        amountOfArmor -= armor.get(i).getAmountOfArmor();
 
 
       } else if (Objects.equals(armor.get(i).type, "legs")) {
@@ -89,7 +90,7 @@ public abstract class Player implements Interactions {
         intelligence += armor.get(i).intelligence;
         agility += armor.get(i).agility;
         spirit += armor.get(i).spirit;
-        amountOfArmor += armor.get(i).getAmountOfArmor();
+        amountOfArmor -= armor.get(i).getAmountOfArmor();
 
 
       } else if (Objects.equals(armor.get(i).type, "boots")) {
@@ -99,8 +100,7 @@ public abstract class Player implements Interactions {
         intelligence += armor.get(i).intelligence;
         agility += armor.get(i).agility;
         spirit += armor.get(i).spirit;
-        amountOfArmor += armor.get(i).getAmountOfArmor();
-
+        amountOfArmor -= armor.get(i).getAmountOfArmor();
 
       }
 

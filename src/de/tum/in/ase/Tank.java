@@ -18,7 +18,7 @@ public class Tank extends Player {
         super.spirit = 2;
         super.amountOfArmor = 30;
 
-        equipItems();
+        super.equipItems();
         equipShield();
     }
 

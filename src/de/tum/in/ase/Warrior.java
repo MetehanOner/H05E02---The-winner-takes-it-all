@@ -16,7 +16,7 @@ public class Warrior extends Player {
         super.spirit = 2;
         super.amountOfArmor = 15;
 
-        equipItems();
+        super.equipItems();
     }
 
     @Override

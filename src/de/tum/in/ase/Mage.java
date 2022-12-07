@@ -16,7 +16,7 @@ public class Mage extends Player{
         super.spirit = 6;
         super.amountOfArmor = 5;
 
-        equipItems();
+        super.equipItems();
     }
 
     @Override
