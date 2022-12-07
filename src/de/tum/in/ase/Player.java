@@ -60,7 +60,7 @@ public abstract class Player implements Interactions {
         agility += armor.get(i).agility;
         spirit += armor.get(i).spirit;
         amountOfArmor += armor.get(i).getAmountOfArmor();
-        break;
+
 
       } else if (Objects.equals(armor.get(i).type, "chest")) {
 
@@ -70,7 +70,7 @@ public abstract class Player implements Interactions {
         agility += armor.get(i).agility;
         spirit += armor.get(i).spirit;
         amountOfArmor += armor.get(i).getAmountOfArmor();
-        break;
+
 
       } else if (Objects.equals(armor.get(i).type, "hands")) {
 
@@ -80,7 +80,6 @@ public abstract class Player implements Interactions {
         agility += armor.get(i).agility;
         spirit += armor.get(i).spirit;
         amountOfArmor += armor.get(i).getAmountOfArmor();
-        break;
 
 
       } else if (Objects.equals(armor.get(i).type, "legs")) {
@@ -91,7 +90,7 @@ public abstract class Player implements Interactions {
         agility += armor.get(i).agility;
         spirit += armor.get(i).spirit;
         amountOfArmor += armor.get(i).getAmountOfArmor();
-        break;
+
 
       } else if (Objects.equals(armor.get(i).type, "boots")) {
 
@@ -101,7 +100,7 @@ public abstract class Player implements Interactions {
         agility += armor.get(i).agility;
         spirit += armor.get(i).spirit;
         amountOfArmor += armor.get(i).getAmountOfArmor();
-        break;
+
 
       }
 
