@@ -41,6 +41,7 @@ public abstract class Player implements Interactions {
     this.armor = armor;
     this.health = 200;
     equipItems();
+    //very
 
   }
 
