@@ -6,6 +6,7 @@ public class Weapon extends Item {
 
     public Weapon(String weaponType, String specification, int damage, int strength, int intelligence, int agility, int spirit) {
         super(weaponType);
+
         this.damage = damage;
 
         super.specification = specification;
@@ -19,4 +20,6 @@ public class Weapon extends Item {
     public int getDamage() {
         return damage;
     }
+
+
 }
